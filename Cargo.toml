@@ -1,9 +1,12 @@
 [package]
-name = "todo_app"
+name = "rust_todo_app"
 version = "0.1.0"
-edition = "2018"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+chrono = "0.4"
 serde = { version = "1.0", features = ["derive"] }
 serde_json = "1.0"
 clap = "3.0" # コマンドラインインターフェースを選択した場合
@@ -12,7 +15,7 @@ anyhow = "1.0"
 
 # GUIベースのインターフェースを選択した場合
 # (例: icedを使用する場合)
-iced = { version = "0.5", features = ["tokio"] }
+# iced = { version = "0.5", features = ["tokio"] }
 
-[dev-dependencies]
-proptest = "1.0"
+# [dev-dependencies]
+# proptest = "1.0"
